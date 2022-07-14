@@ -6,4 +6,5 @@
 
 @section('page-content')
     <h1>Home Page</h1>
+    @dump($comics);
 @endsection
