@@ -24,7 +24,7 @@ class ComicsTableSeeder extends Seeder
                 $newComic->type = $comic['type'];
                 $newComic->series = $comic['series'];
                 $newComic->price = $comic['price'];
-                $newComic->text = $comic['description'];
+                $newComic->description = $comic['description'];
                 $newComic->sale_date = $comic['sale_date'];
                 $newComic->image = $comic['thumb'];
         
