@@ -18,10 +18,9 @@ class CreateComicsTable extends Migration
             $table->string('title', 80);
             $table->string('type', 50);
             $table->string('series', 50);
-            $table->text('artists')->toJson();
-            $table->text('writers')->nullable()->toJson();
             $table->float('price', 4, 2);
             $table->text('description');
+            $table->date('sale_date');
             $table->string('image')->nullable();
             $table->timestamps();
         });
