@@ -24,7 +24,17 @@
         </thead>
         <tbody>
      @foreach ($comics as $comic)
-         
+         <tr>
+            <td>{{$comic->id}}</td>
+            <td>{{$comic->title}}</td>
+            <td><img width="150" src="{{$comic->image}}" alt="{{$comic->title}}"></td>
+            <td>{{$comic->type}}</td>
+            <td>{{$comic->series}}</td>
+            <td>{{$comic->description}}</td>
+            <td>{{$comic->price}}</td>
+            <td>{{$comic->sale_date}}</td>
+            <td><button type="button" class="btn btn-primary">Show More</button></td>
+         </tr>
      @endforeach
         </tbody>
       </table>
