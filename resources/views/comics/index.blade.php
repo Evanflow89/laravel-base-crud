@@ -6,7 +6,6 @@
 
 @section('page-content')
 <div class="container">
-    <h1>Comics</h1>
 
     <table class="table table-dark">
         <thead>
