@@ -7,7 +7,8 @@
 @section('page-content')
   <h1>Insert a new Comic</h1>  
 
-  <form>
+  <form action="{{route('comics.store')}}" method="POST">
+    @csrf
     <div class="mb-3">
       <label for="title" class="form-label">Title</label>
       <input type="text" class="form-control" id="title" name="title">

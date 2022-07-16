@@ -25,7 +25,7 @@
          <tr class="text-center">
             <td>{{$comic->id}}</td>
             <td>{{$comic->title}}</td>
-            <td><img width="150" src="{{$comic->image}}" alt="{{$comic->title}}"></td>
+            <td><img width="150" src="{{$comic->image ? $comic->image : "https://c8.alamy.com/compit/pw9fa2/boom-lo-stile-comico-frase-con-discorso-bolla-illustrazione-vettoriale-pw9fa2.jpg" }}" alt="{{$comic->title}}"></td>
             <td>{{$comic->type}}</td>
             <td>{{$comic->series}}</td>
             <td>{{$comic->sale_date}}</td>
