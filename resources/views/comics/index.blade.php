@@ -16,7 +16,7 @@
             <th scope="col">Type</th>
             <th scope="col">Series</th>
             <th scope="col">Sale Date</th>
-            <th scope="col">Actions</th>
+            <th class="d-flex flex-grow-1" scope="col">Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -28,12 +28,12 @@
             <td>{{$comic->type}}</td>
             <td>{{$comic->series}}</td>
             <td>{{$comic->sale_date}}</td>
-            <td><a href="{{route('comics.show', $comic->id)}}" class="btn btn-primary"">Show</a></td>
-            <td><a href="{{route('comics.edit', $comic->id)}}" class="btn btn-warning"">Update</a></td>
-            <td><form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+            <td><a href="{{route('comics.show', $comic->id)}}" class="btn btn-primary"">Show</a>
+            <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-warning"">Update</a>
+            <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
             @csrf
             @method('DELETE')
-            <input type="submit" value="delete" class="btn btn-danger"></form></td>
+            <input type="submit" value="Delete" class="btn btn-danger"></form></td>
          </tr>
      @endforeach
         </tbody>
