@@ -30,6 +30,10 @@
             <td>{{$comic->sale_date}}</td>
             <td><a href="{{route('comics.show', $comic->id)}}" class="btn btn-primary"">Show More</a></td>
             <td><a href="{{route('comics.edit', $comic->id)}}" class="btn btn-warning"">Update</a></td>
+            <td><form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+            @csrf
+            @method('DELETE')
+            <input type="submit" value="delete" class="btn btn-danger"></form></td>
          </tr>
      @endforeach
         </tbody>
